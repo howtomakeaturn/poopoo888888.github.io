@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Poopoo888888.github.io : " />
+
+    <script src="javascripts/jquery-2.0.3.min.js"></script>
+    <script src="javascripts/jquery.lunZhuan.js"></script>
+    <title>Poopoo888888.github.io</title>
+  </head>
+
+  <body>
+    
+    <h3>Default usage</h3>
+    
+        <ul id='example1'>
+            <li>(CNN) -- Two juvenile suspects were in custody Tuesday after a chemical device ruptured at SkyView Academy in Highlands Ranch, Colorado.</li>
+            <li>The most emotional moment came well into the nearly hour-long address when Christie told the story of Craig Hanlon, a former drug addict from his hometown now working as a practicing attorney. Hanlon, who was seated near the front, stood up and hugged the governor to a lengthy ovation.</li>
+            <li>Economy on the mend: Dimon said during a conference call after the earnings release that he was optimistic about the outlook for the U.S. economy.</li>
+            <li>The accident happened Saturday on the White Nile River near Malakal in the northeast of the country, said Col. Philip Aguer of the Sudan People's Liberation Army.</li>
+            <li>Authorities detained a seventh-grader who is "responsible for this," said State Police Chief Pete Kassetas.</li>
+            <li>For a couple of years, the only living examples of the water lily were found in Bonn and London.</li>
+            <li>As a precaution, five people -- four students and one teacher -- were transported to an area hospital, the Douglas County Sheriff's Office said in a statement. All have been medically cleared and released.</li>
+        </ul>
+        
+    <h3>Shopping Website</h3>
+
+    <ul id='example2'>
+        <li>
+            <a href='/example/1'>
+                <div class='suggested-item-original-image'><img src="./images/1.jpg" /></div>
+                <div class='suggested-item-title'>Big nice apple</div>
+                <div class='suggested-item-original-price'>$ 500~1,000</div>
+                <div class='suggested-item-selling-price'>$ 11</div>
+            </a>
+        </li>
+        <li>
+            <a href='/example/1'>
+                <div class='suggested-item-original-image'><img src="./images/2.jpg" /></div>
+                <div class='suggested-item-title'>Big nice apple</div>
+                <div class='suggested-item-original-price'>$ 500~1,000</div>
+                <div class='suggested-item-selling-price'>$ 11</div>
+            </a>
+        </li>
+        <li>
+            <a href='/example/1'>
+                <div class='suggested-item-original-image'><img src="./images/3.jpg" /></div>
+                <div class='suggested-item-title'>Big nice apple</div>
+                <div class='suggested-item-original-price'>$ 500~1,000</div>
+                <div class='suggested-item-selling-price'>$ 11</div>
+            </a>
+        </li>
+        <li>
+            <a href='/example/1'>
+                <div class='suggested-item-original-image'><img src="./images/4.jpg" /></div>
+                <div class='suggested-item-title'>Big nice apple</div>
+                <div class='suggested-item-original-price'>$ 500~1,000</div>
+                <div class='suggested-item-selling-price'>$ 11</div>
+            </a>
+        </li>
+        <li>
+            <a href='/example/1'>
+                <div class='suggested-item-original-image'><img src="./images/5.jpg" /></div>
+                <div class='suggested-item-title'>Big nice apple</div>
+                <div class='suggested-item-original-price'>$ 123~1,234</div>
+                <div class='suggested-item-selling-price'>$ 25</div>
+            </a>
+        </li>
+    </ul>        
+
+        
+    <style>
+        
+
+        .suggested-item{
+            margin: 0px 10px 20px 10px;
+            border: 1px solid #DDD;
+            padding: 10px;
+        }
+        
+        .suggested-item:hover{
+            box-shadow: 0 0 5px #BBBBBB;
+        }
+        .suggested-item-original-image img{
+            width: 175px;
+        }        
+        .suggested-item-title{
+            color: black;
+            padding: 10px;
+        }
+        
+        .suggested-item-original-price{
+            text-decoration: line-through;
+            color: black;
+            margin-bottom: 3px;
+            margin-left: 10px;          
+        }
+        .suggested-item-selling-price{
+            background-color: pink;
+            margin-left: 10px;
+            color: black;
+            display: inline;
+            padding-left: 5px;
+        }
+        .suggested-item-button{
+            margin-top: 150px;
+            padding-left: 2px;
+        }
+        
+    </style>
+      <script>
+         
+           $('#example2').lunZhuan({
+              itemClass: 'suggested-item',
+              buttonClass: 'suggested-item-button'
+          });
+         
+          $('#example1').lunZhuan();
+          
+      </script>
+  </body>
+</html>
