@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/jquery.ajaxWithHash.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>Ajax With Hash</h1>
+        <script>
+            var awhTool = new AjaxWithHashTool();    
+            awhTool.set('type', 'jeans');    
+            awhTool.set('page', '1');
+            awhTool.setUrl('/ajax/clothing')
+            awhTool.setBeforeCallback(function(){
+                alert('ready to send ajax');
+            });
+            awhTool.setSuccessCallback(function(){
+            });
+            // awhTool.setParamsFromUrl();
+            awhTool.send();        
+        </script>
+    </body>
+</html>

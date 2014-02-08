@@ -1,4 +1,4 @@
-$.fn.lunZhuan = function(options) {
+$.fn.displayWindow = function(options) {
     // 'var' as private variable
     var _counter = 0;
     var _totalElement = this.find('li').size();
